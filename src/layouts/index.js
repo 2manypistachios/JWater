@@ -1,10 +1,13 @@
-import React from 'react'
-import Link from 'gatsby-link'
-import '../assets/scss/main.scss'
-import Header from '../components/Header'
-import Menu from '../components/Menu'
-import Contact from '../components/Contact'
-import Footer from '../components/Footer'
+import React from 'react';
+import Link from 'gatsby-link';
+import Script from 'react-load-script';
+import graphql from 'graphql';
+
+import '../assets/scss/main.scss';
+import Header from '../components/Header';
+import Menu from '../components/Menu';
+import Contact from '../components/Contact';
+import Footer from '../components/Footer';
 
 class Template extends React.Component {
 
@@ -57,3 +60,22 @@ Template.propTypes = {
 }
 
 export default Template
+
+export const pageQuery = graphql`
+  query IndexQuery {
+    allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___date] }) {
+      edges {
+        node {
+          excerpt(pruneLength: 400)
+          id
+          frontmatter {
+            title
+            date(formatString: "MMMM DD, YYYY")
+            path
+            templateKey
+          }
+        }
+      }
+    }
+  }
+`;
