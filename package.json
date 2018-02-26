@@ -1,13 +1,14 @@
 {
-  "name": "gatsby-starter-forty",
-  "description": "Gatsby Starter - Forty by HTML5 UP",
+  "name": "JWater",
+  "description": "JWater's Site",
   "version": "1.0.0",
-  "author": "Hunter Chang",
+  "author": "Maxim Podolski",
   "dependencies": {
     "gatsby": "^1.9.118",
     "gatsby-image": "^1.0.27",
     "gatsby-link": "^1.6.28",
     "gatsby-plugin-google-analytics": "^1.0.12",
+    "gatsby-plugin-netlify-cms": "^1.0.9",
     "gatsby-plugin-react-helmet": "^1.0.8",
     "gatsby-plugin-sass": "^1.0.14",
     "gatsby-plugin-sharp": "^1.6.21",
