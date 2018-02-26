@@ -3,6 +3,7 @@ templateKey: 'product-page'
 title: Osmosis
 date: "2015-05-06T23:46:37.121Z"
 path: "/osmosis/"
+description: 'Breath in.... .... .... ....'
 ---
 
 Wow! I love blogging so much already.

@@ -25,19 +25,64 @@ class HomeIndex extends React.Component {
         }
         window.netlifyIdentity.init();
     }
-
     render() {
-        //const { data } =  this.props.data;
-        const siteTitle = this.props.data.site.siteMetadata.title
-        const siteDescription = this.props.data.site.siteMetadata.description
-        console.log("data",this.props);
+        const { data } = this.props;
+        const { edges: posts } = data.allMarkdownRemark;
+        console.log(data);
+        console.log(posts);
+        return (
+          <section className="section">
+            <Script
+              url="https://identity.netlify.com/v1/netlify-identity-widget.js"
+              onLoad={() => this.handleScriptLoad()}
+            />
+            <div className="container">
+              <div className="content">
+                <h1 className="has-text-weight-bold is-size-2">Latest Stories</h1>
+              </div>
+              {posts
+                .filter(post => post.node.frontmatter.templateKey === "product-page")
+                .map(({ node: post }) => (
+                  <div
+                    className="content"
+                    style={{ border: "1px solid #eaecee", padding: "2em 4em" }}
+                    key={post.id}
+                  >
+                    <p>
+                      <Link className="has-text-primary" to={post.frontmatter.path}>
+                        {post.frontmatter.title}
+                      </Link>
+                      <span> &bull; </span>
+                      <small>{post.frontmatter.date}</small>
+                    </p>
+                    <p>
+                      {post.excerpt}
+                      <br />
+                      <br />
+                      <Link className="button is-small" to={post.frontmatter.path}>
+                        Keep Reading →
+                      </Link>
+                    </p>
+                  </div>
+                ))}
+            </div>
+          </section>
+        );
+      }
+    /* render() {
+        const { data } = this.props;
+        const { edges: posts } = data.allMarkdownRemark;
+        console.log(data);
+        console.log(posts);
+        //const posts = data.allMarkdownRemark.edges;
+        const siteTitle = data.site.siteMetadata.title;
+        const siteDescription = data.site.siteMetadata.description;
         return (
             <div>
                 <Script
                     url="https://identity.netlify.com/v1/netlify-identity-widget.js"
                     onLoad={() => this.handleScriptLoad()}
                 />
-                <script>console.log("data",this.props)</script>
                 <Helmet>
                     <title>{siteTitle}</title>
                     <meta name="description" content={siteDescription} />
@@ -47,48 +92,17 @@ class HomeIndex extends React.Component {
 
                 <div id="main">
                     <section id="one" className="tiles">
-                        <article style={{backgroundImage: `url(${pic01})`}}>
-                            <header className="major">
-                                <h3>First</h3>
-                                <p>With Useful details</p>
-                            </header>
-                            <Link to="/landing" className="link primary"></Link>
-                        </article>
-                        <article style={{backgroundImage: `url(${pic02})`}}>
-                            <header className="major">
-                                <h3>Second</h3>
-                                <p>That's the shit</p>
-                            </header>
-                            <Link to="/landing" className="link primary"></Link>
-                        </article>
-                        <article style={{backgroundImage: `url(${pic03})`}}>
-                            <header className="major">
-                                <h3>Third</h3>
-                                <p>Oh my</p>
-                            </header>
-                            <Link to="/landing" className="link primary"></Link>
-                        </article>
-                        <article style={{backgroundImage: `url(${pic04})`}}>
-                            <header className="major">
-                                <h3>Fifth</h3>
-                                <p>Just kidding it's fourth</p>
-                            </header>
-                            <Link to="/landing" className="link primary"></Link>
-                        </article>
-                        <article style={{backgroundImage: `url(${pic05})`}}>
-                            <header className="major">
-                                <h3>Consequat</h3>
-                                <p>Ipsum dolor sit amet</p>
-                            </header>
-                            <Link to="/landing" className="link primary"></Link>
-                        </article>
-                        <article style={{backgroundImage: `url(${pic06})`}}>
-                            <header className="major">
-                                <h3>Etiam</h3>
-                                <p>Feugiat amet tempus</p>
-                            </header>
-                            <Link to="/landing" className="link primary"></Link>
-                        </article>
+                        {posts
+                            .filter(post => post.node.frontmatter.templateKey === "product-post")
+                            .map(({node: post}) => (
+                                <article style={{backgroundImage: `url(${pic01})`}}>
+                                    <header className="major">
+                                        <h3>First</h3>
+                                        <p>{post.frontmatter.title} JWater's Water's Water.</p>
+                                    </header>
+                                    <Link to="/landing" className="link primary"></Link>
+                                </article>
+                            ))}
                     </section>
                     <section id="two">
                         <div className="inner">
@@ -105,7 +119,7 @@ class HomeIndex extends React.Component {
 
             </div>
         )
-    }
+    } */
 }
 
 export default HomeIndex

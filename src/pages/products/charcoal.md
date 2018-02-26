@@ -3,6 +3,7 @@ templateKey: 'product-page'
 title: Charcoal
 date: "2015-05-06T23:46:37.121Z"
 path: "/charcoal/"
+description: 'A lovely charcoal-finish. 3>'
 ---
 
 Wow! I love blogging so much already.
