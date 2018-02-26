@@ -53,29 +53,10 @@ class Template extends React.Component {
             </div>
         )
     }
-}
+};
 
 Template.propTypes = {
     children: React.PropTypes.func
-}
+};
 
-export default Template
-
-export const pageQuery = graphql`
-  query IndexQuery {
-    allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___date] }) {
-      edges {
-        node {
-          excerpt(pruneLength: 400)
-          id
-          frontmatter {
-            title
-            date(formatString: "MMMM DD, YYYY")
-            path
-            templateKey
-          }
-        }
-      }
-    }
-  }
-`;
+export default Template;

@@ -1,15 +1,15 @@
 module.exports = {
   siteMetadata: {
-    title: "Gatsby Starter - Forty by HTML5 UP",
-    author: "Hunter Chang",
-    description: "A Gatsby.js Starter based on Forty by HTML5 UP"
+    title: "JWater",
+    author: "Maxim Podolski",
+    description: "Landing Page for JWater-hk.com"
   },
   pathPrefix: '/',
   plugins: [
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        path: `${__dirname}/src/posts`,
+        path: `${__dirname}/src/pages`,
         name: "posts",
       },
     },
