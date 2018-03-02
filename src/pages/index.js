@@ -77,6 +77,7 @@ class HomeIndex extends React.Component {
         //const posts = data.allMarkdownRemark.edges;
         const siteTitle = data.site.siteMetadata.title;
         const siteDescription = data.site.siteMetadata.description;
+        
         return (
             <div>
                 <Script
