@@ -25,7 +25,7 @@ class HomeIndex extends React.Component {
         }
         window.netlifyIdentity.init();
     }
-    render() {
+    /*render() {
         const { data } = this.props;
         const { edges: posts } = data.allMarkdownRemark;
         console.log(data);
@@ -68,11 +68,11 @@ class HomeIndex extends React.Component {
             </div>
           </section>
         );
-      }
-    /* render() {
+      }*/
+     render() {
         const { data } = this.props;
-        const { edges: posts } = data.allMarkdownRemark;
         console.log(data);
+        const { edges: posts } = data.allMarkdownRemark;
         console.log(posts);
         //const posts = data.allMarkdownRemark.edges;
         const siteTitle = data.site.siteMetadata.title;
@@ -93,16 +93,16 @@ class HomeIndex extends React.Component {
                 <div id="main">
                     <section id="one" className="tiles">
                         {posts
-                            .filter(post => post.node.frontmatter.templateKey === "product-post")
-                            .map(({node: post}) => (
-                                <article style={{backgroundImage: `url(${pic01})`}}>
-                                    <header className="major">
-                                        <h3>First</h3>
-                                        <p>{post.frontmatter.title} JWater's Water's Water.</p>
-                                    </header>
-                                    <Link to="/landing" className="link primary"></Link>
-                                </article>
-                            ))}
+                        .filter(post => post.node.frontmatter.templateKey === "product-page")
+                        .map(({ node: post },index) => (
+                            <article style={{backgroundImage: `url(${pic01})`}}>
+                                <header className="major">
+                                    <h3>{post.frontmatter.title}</h3>
+                                    <p>{post.frontmatter.description}</p>
+                                </header>
+                                <Link className="link primary" to={post.frontmatter.path}></Link>
+                            </article>
+                        ))}
                     </section>
                     <section id="two">
                         <div className="inner">
@@ -119,7 +119,7 @@ class HomeIndex extends React.Component {
 
             </div>
         )
-    } */
+    }
 }
 
 export default HomeIndex
@@ -140,8 +140,8 @@ export const pageQuery = graphql`
                 frontmatter {
                   title
                   templateKey
-                  date(formatString: "MMMM DD, YYYY")
                   path
+                  description
                 }
               }
             }
