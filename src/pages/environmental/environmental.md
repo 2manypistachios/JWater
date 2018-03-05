@@ -2,6 +2,7 @@
 templateKey: environmental-page
 path: /environmental/
 title: JWater's Environmental Program
+description: Talking about Environmental
 image: /img/enviornment.jpg
 ---
 Far far away, behind the word mountains, far from the countries Vokalia
