@@ -12,37 +12,13 @@ collections:
     folder: "src/pages/products"
     create: true
     fields:
-      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "blog-post"}
+      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "product-page"}
       - {label: "Path", name: "path", widget: "string"}
       - {label: "Title", name: "title", widget: "string"}
-      - {label: "Publish Date", name: "date", widget: "datetime"}
-      - {label: "Description", name: "description", widget: "text"}
+      - {label: "Description", name: "description", widget: "string"}
+      - {label: "Product Image", name: product-image, widget: "image"}
+      - {label: "Background Image", name: "background-image", widget: "image"}
       - {label: "Body", name: "body", widget: "markdown"}
-      - {label: "Product Image", name: product-image, widget: "product-image"}
-      - {label: "Background Image", name: "background-image", widget: "background-image"}
-  
-  - name: "test"
-    label: "Test"
-    files: 
-      - file: "src/pages/about/about.md"
-        label: "About"
-        name: "about"
-        fields:
-          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "about-page"}
-          - {label: "Path", name: "path", widget: "hidden", default: "/about"}
-          - {label: "Title", name: "title", widget: "string"}
-          - {label: "Body", name: "body", widget: "markdown"}
-          - {label: "Image", name: image, widget: "image"}
-
-  - name: "test2"
-    label: "Test2"
-    files: 
-      - file: "src/pages/environmental/environmental.md"
-        fields:
-          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "about-page"}
-          - {label: "Path", name: "path", widget: "hidden", default: "/about"}
-
-
 
   - name: "pages"
     label: "Pages"
@@ -54,8 +30,9 @@ collections:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "about-page"}
           - {label: "Path", name: "path", widget: "hidden", default: "/about"}
           - {label: "Title", name: "title", widget: "string"}
-          - {label: "Body", name: "body", widget: "markdown"}
+          - {label: "Description", name: "description", widget: "string"}
           - {label: "Image", name: image, widget: "image"}
+          - {label: "Body", name: "body", widget: "markdown"}
       - file: "src/pages/environmental/environmental.md"
         label: "Environment"
         name: "environment"
@@ -63,5 +40,6 @@ collections:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "environment-page"}
           - {label: "Path", name: "path", widget: "hidden", default: "/environment"}
           - {label: Title, name: title, widget: string}
-          - {label: "Body", name: "body", widget: "markdown"}
+          - {label: "Description", name: "description", widget: "string"}
           - {label: Image, name: image, widget: image}
+          - {label: "Body", name: "body", widget: "markdown"}
