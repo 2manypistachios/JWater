@@ -2,6 +2,7 @@
 templateKey: about-page
 path: /about/
 title: About JWater's Values
+description: Talking About JWater
 image: /img/enviornment2.jpg
 ---
 This is my first post on my new fake blog! How exciting!
