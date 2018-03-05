@@ -1,6 +1,5 @@
 import React from 'react';
 import graphql from 'graphql';
-import Link from 'gatsby-link'
 import Content, { HTMLContent } from '../components/Content';
 
 import pic11 from '../assets/images/pic11.jpg'
@@ -13,9 +12,7 @@ export const ProductPageTemplate = ({ title, content, image, contentComponent })
         <div id="main" className="alt">
           <section id="one" className="spotlights">
             <section>
-                <Link to="/generic" className="image">
-                    <img src={image} alt="" />
-                </Link>
+                <img src={image} alt="" />
                 <div className="content">
                     <div className="inner">
                         <header className="major">
