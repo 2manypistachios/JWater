@@ -19,6 +19,13 @@ collections:
       - {label: "Body", name: "body", widget: "markdown"}
       - {label: "Product Image", name: product-image, widget: "product-image"}
       - {label: "Background Image", name: "background-image", widget: "background-image"}
+  
+  - name: "test"
+    label: "Test"
+    folder: "src/pages/products"
+    create: true
+    fields:
+      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "blog-post"}
 
   - name: "pages"
     label: "Pages"
@@ -32,7 +39,6 @@ collections:
           - {label: "Title", name: "title", widget: "string"}
           - {label: "Body", name: "body", widget: "markdown"}
           - {label: "Image", name: image, widget: "image"}
-
       - file: "src/pages/environment/environment.md"
         label: "Environment"
         name: "environment"
