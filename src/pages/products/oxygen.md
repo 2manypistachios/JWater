@@ -1,9 +1,10 @@
 ---
-templateKey: 'product-page'
+templateKey: product-page
+path: /oxygen/
 title: Oxygen
-date: "2015-05-06T23:46:37.121Z"
-path: "/oxygen/"
-description: 'AIR AND WATER OH MY GOODNESS'
+description: AIR AND WATER OH MY GOODNESS
+product-image: /img/oxygen-water.jpg
+background-image: /img/pic01.f7c500d0.jpg
 ---
 
 Wow! I love blogging so much already.
