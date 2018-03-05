@@ -22,10 +22,23 @@ collections:
   
   - name: "test"
     label: "Test"
-    folder: "src/pages/products"
-    create: true
-    fields:
-      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "blog-post"}
+    files: 
+      - file: "src/pages/about/about.md"
+        label: "About"
+        name: "about"
+        create: true
+        fields:
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "about-page"}
+          - {label: "Path", name: "path", widget: "hidden", default: "/about"}
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Body", name: "body", widget: "markdown"}
+          - {label: "Image", name: image, widget: "image"}
+      - file: "src/pages/environment/environment.md"
+        label: "Environment"
+        name: "environment"
+        fields:
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "environment-page"}
+          - {label: "Path", name: "path", widget: "hidden", default: "/environment"}
 
   - name: "pages"
     label: "Pages"
