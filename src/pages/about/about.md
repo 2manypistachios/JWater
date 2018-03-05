@@ -3,6 +3,7 @@ templateKey: 'about-page'
 title: Hello World
 date: "2015-05-01T22:12:03.284Z"
 path: "/about/"
+description: "This is about JWater and why its great"
 ---
 
 This is my first post on my new fake blog! How exciting!

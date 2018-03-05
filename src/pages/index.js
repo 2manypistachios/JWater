@@ -25,50 +25,7 @@ class HomeIndex extends React.Component {
         }
         window.netlifyIdentity.init();
     }
-    /*render() {
-        const { data } = this.props;
-        const { edges: posts } = data.allMarkdownRemark;
-        console.log(data);
-        console.log(posts);
-        return (
-          <section className="section">
-            <Script
-              url="https://identity.netlify.com/v1/netlify-identity-widget.js"
-              onLoad={() => this.handleScriptLoad()}
-            />
-            <div className="container">
-              <div className="content">
-                <h1 className="has-text-weight-bold is-size-2">Latest Stories</h1>
-              </div>
-              {posts
-                .filter(post => post.node.frontmatter.templateKey === "product-page")
-                .map(({ node: post }) => (
-                  <div
-                    className="content"
-                    style={{ border: "1px solid #eaecee", padding: "2em 4em" }}
-                    key={post.id}
-                  >
-                    <p>
-                      <Link className="has-text-primary" to={post.frontmatter.path}>
-                        {post.frontmatter.title}
-                      </Link>
-                      <span> &bull; </span>
-                      <small>{post.frontmatter.date}</small>
-                    </p>
-                    <p>
-                      {post.excerpt}
-                      <br />
-                      <br />
-                      <Link className="button is-small" to={post.frontmatter.path}>
-                        Keep Reading →
-                      </Link>
-                    </p>
-                  </div>
-                ))}
-            </div>
-          </section>
-        );
-      }*/
+
      render() {
         const { data } = this.props;
         console.log(data);
@@ -87,8 +44,12 @@ class HomeIndex extends React.Component {
                     <title>{siteTitle}</title>
                     <meta name="description" content={siteDescription} />
                 </Helmet>
-
-                <Banner />
+                
+                {posts
+                .filter(post => post.node.frontmatter.templateKey === "about-page")
+                .map(({ node: post },index) => (
+                    <Banner post={post} />
+                ))}
 
                 <div id="main">
                     <section id="one" className="tiles">
@@ -105,15 +66,19 @@ class HomeIndex extends React.Component {
                         ))}
                     </section>
                     <section id="two">
-                        <div className="inner">
-                            <header className="major">
-                                <h2>Section two</h2>
-                            </header>
-                            <p>Section two is completely insane. Its so insane I can't even explain it. That's how insane it is. It is so insane that you can't even explain it. How insane.</p>
-                            <ul className="actions">
-                                <li><Link to="/landing" className="button next">Get Started</Link></li>
-                            </ul>
-                        </div>
+                        {posts
+                        .filter(post => post.node.frontmatter.templateKey === "environmental-page")
+                        .map(({ node: post },index) => (       
+                            <div className="inner">
+                                <header className="major">
+                                    <h2>{post.frontmatter.title}</h2>
+                                </header>
+                                <p>{post.frontmatter.description}</p>
+                                <ul className="actions">
+                                    <li><Link to={post.frontmatter.path} className="button next">Read More</Link></li>
+                                </ul>
+                            </div>
+                        ))}
                     </section>
                 </div>
 

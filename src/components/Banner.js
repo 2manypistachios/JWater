@@ -1,16 +1,17 @@
 import React from 'react'
+import Link from 'gatsby-link';
 
-const Banner = (props) => (
+const Banner = ({post}) => (
     <section id="banner" className="major">
         <div className="inner">
             <header className="major">
-                <h1>Hi, my name is Forty</h1>
+                <h1>{post.frontmatter.title}</h1>
             </header>
             <div className="content">
-                <p>A responsive site template designed by HTML5 UP<br />
-                and released under the Creative Commons.</p>
+                <p>{post.frontmatter.description}<br />
+                by JWater</p>
                 <ul className="actions">
-                    <li><a href="#one" className="button next scrolly">Get Started</a></li>
+                    <li><Link className="button next scrolly" to={post.frontmatter.path}>Learn About</Link></li>
                 </ul>
             </div>
         </div>

@@ -2,22 +2,25 @@ import React from 'react';
 import graphql from 'graphql';
 import Content, { HTMLContent } from '../components/Content';
 
+import pic11 from '../assets/images/pic11.jpg'
+
 export const AboutPageTemplate = ({ title, content, contentComponent }) => {
   const PageContent = contentComponent || Content;
 
   return (
-    <section className="section section--gradient">
-      <div className="container">
-        <div className="columns">
-          <div className="column is-10 is-offset-1">
-            <div className="section">
-              <h2 className="title is-size-3 has-text-weight-bold is-bold-light">{title}</h2>
+    <div>
+        <div id="main" className="alt">
+          <section id="one">
+            <div className="inner">
+              <header className="major">
+                <h1>{title}</h1>
+              </header>
+              <span className="image main"><img src={pic11} alt="" /></span>
               <PageContent className="content" content={content} />
             </div>
-          </div>
+          </section>
         </div>
-      </div>
-    </section>
+    </div>
   );
 };
 

@@ -4,11 +4,11 @@ const BannerLanding = (props) => (
     <section id="banner" className="style2">
         <div className="inner">
             <header className="major">
-                <h1>Landing</h1>
+                <h1>Jwater Landing Page</h1>
             </header>
             <div className="content">
-                <p>Lorem ipsum dolor sit amet nullam consequat<br />
-                sed veroeros. tempus adipiscing nulla.</p>
+                <p>Learn More on Jwater<br />
+                And why its so great.</p>
             </div>
         </div>
     </section>

@@ -3,6 +3,7 @@ templateKey: 'environmental-page'
 title: Environmental
 date: "2015-05-28T22:40:32.169Z"
 path: "/environmental/"
+description: "Our Environment is important, and this is why."
 ---
 
 Far far away, behind the word mountains, far from the countries Vokalia
