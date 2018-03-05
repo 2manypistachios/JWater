@@ -27,6 +27,7 @@ class HomeIndex extends React.Component {
     }
 
      render() {
+        console.log(this);
         const { data } = this.props;
         console.log(data);
         const { edges: posts } = data.allMarkdownRemark;
@@ -98,7 +99,7 @@ export const pageQuery = graphql`
                 description
             }
         }
-        allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___date] }) {
+        allMarkdownRemark {
             edges {
               node {
                 excerpt(pruneLength: 400)
