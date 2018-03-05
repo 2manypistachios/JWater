@@ -11,14 +11,20 @@ class BlogPostTemplate extends React.Component {
     return (
       <div>
         <Helmet title={`${posts.frontmatter.title} | ${siteTitle}`} />
-        <h1>{post.frontmatter.title}</h1>
-        <p>
-          {post.frontmatter.date}
-        </p>
-        <div> THIS IS A BLOG POST </div>
-        <div dangerouslySetInnerHTML={{ __html: post.html }} />
-        <hr/>
-      </div>
+        <div id="main" className="alt">
+            <section id="one">
+              <div className="inner">
+                <header>
+                  <h1>{post.frontmatter.title}</h1>
+                </header>
+                <span className="image main"><img src={image} alt="" /></span>
+                <div> THIS IS A BLOG POST </div>
+                <div dangerouslySetInnerHTML={{ __html: post.html }} />
+                <hr/>
+              </div>
+            </section>
+        </div>
+    </div>
     )
   }
 }
@@ -39,6 +45,7 @@ export const pageQuery = graphql`
       frontmatter {
         path
         title
+        image
       }
     }
   }

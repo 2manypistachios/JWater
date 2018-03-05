@@ -27,9 +27,8 @@ class HomeIndex extends React.Component {
     }
 
      render() {
-        console.log(this);
         const { data } = this.props;
-        console.log(data);
+        //console.log(data);
         const { edges: posts } = data.allMarkdownRemark;
         console.log(posts);
         //const posts = data.allMarkdownRemark.edges;
@@ -58,7 +57,7 @@ class HomeIndex extends React.Component {
                         {posts
                         .filter(post => post.node.frontmatter.templateKey === "product-page")
                         .map(({ node: post },index) => (
-                            <article style={{backgroundImage: `url(${pic01})`}}>
+                            <article style={{backgroundImage: `url(${post.frontmatter.background_image})`}}>
                                 <header className="major">
                                     <h3>{post.frontmatter.title}</h3>
                                     <p>{post.frontmatter.description}</p>
@@ -109,6 +108,8 @@ export const pageQuery = graphql`
                   templateKey
                   path
                   description
+                  background_image
+                  image
                 }
               }
             }

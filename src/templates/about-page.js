@@ -4,7 +4,7 @@ import Content, { HTMLContent } from '../components/Content';
 
 import pic11 from '../assets/images/pic11.jpg'
 
-export const AboutPageTemplate = ({ title, content, contentComponent }) => {
+export const AboutPageTemplate = ({ title, content, image, contentComponent }) => {
   const PageContent = contentComponent || Content;
 
   return (
@@ -15,7 +15,7 @@ export const AboutPageTemplate = ({ title, content, contentComponent }) => {
               <header className="major">
                 <h1>{title}</h1>
               </header>
-              <span className="image main"><img src={pic11} alt="" /></span>
+              <span className="image main"><img src={image} alt="" /></span>
               <PageContent className="content" content={content} />
             </div>
           </section>
@@ -30,6 +30,7 @@ export default ({ data }) => {
   return (<AboutPageTemplate
     contentComponent={HTMLContent}
     title={post.frontmatter.title}
+    image={post.frontmatter.image}
     content={post.html}
   />);
 };
@@ -41,6 +42,7 @@ export const aboutPageQuery = graphql`
       frontmatter {
         path
         title
+        image
       }
     }
   }
