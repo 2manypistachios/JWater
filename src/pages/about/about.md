@@ -1,6 +1,6 @@
 ---
 templateKey: 'about-page'
-title: Hello World
+title: About JWater's Values
 date: "2015-05-01T22:12:03.284Z"
 path: "/about/"
 description: "This is about JWater and why its great"

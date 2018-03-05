@@ -8,7 +8,7 @@ public_folder: /img
 collections:
   - name: "product"
     label: "Product"
-    folder: "src/pages/product"
+    folder: "src/pages/products"
     create: true
     fields:
       - {label: "Template Key", name: "templateKey", widget: "hidden", default: "blog-post"}
