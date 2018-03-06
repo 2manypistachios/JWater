@@ -1,6 +1,6 @@
 backend:
-  name: github
-  repo: 2manypistachios/jwater
+  name: git-gateway
+  branch: master
 
 
 media_folder: static/img
