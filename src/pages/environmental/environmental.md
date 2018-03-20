@@ -3,7 +3,7 @@ templateKey: environmental-page
 path: /environmental/
 title: 水捐贈
 description: 水捐贈
-image: /img/enviornment.jpg
+image: /img/-1.jpg
 ---
 香港政府公告本港的貧窮缐人任佔全港人15%，須則如此但在一般家庭需要高質素的飲用水亦非易事，尤其是長期病患者或癌症康復者等，他們需要鹼性較高的水來平衡身體的酸鹼度，並且需要長期飲用，Jwater的7.5是出自天然水泉的中鹼水是人體最適合的，我們的「水捐贈」就是通過申請後批核的人仕，免費每天受贈7.5水一支。
 
