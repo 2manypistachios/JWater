@@ -1,9 +1,10 @@
 ---
 templateKey: product-page
 path: /charcoal/
-title: Charcoal
-description: A lovely charcoal-finish. 3>
-image: /img/charcoal-water.jpg
-background_image: /img/pic01.f7c500d0.jpg
+title: Energy Water   能量水
+description: >-
+  水的能量與人體血液和細胞的新陳代謝，與高能量轉移都息息相關，在公害生活環境及隨著年齡增長吸收率下降，營養與廢物排出的過程中造成更大的耗能狀態。然而我們身體裡有一個特殊的「水通道」讓好水能進到細胞內，吸收及廢物排放的功能，而水源隱藏著鈣，鎂，鉀等元素，在天然的地理環境下，能量自然寄存在水的分子，使能量的有機髏高效率吸收，並選擇分配給各器官組織所需，達到吸收高能量的健康目標。
+image: /img/energy-water.png
+background_image: /img/energy-water.png
 ---
-Charcoal water is great!
+水的能量與人體血液和細胞的新陳代謝，與高能量轉移都息息相關，在公害生活環境及隨著年齡增長吸收率下降，營養與廢物排出的過程中造成更大的耗能狀態。然而我們身體裡有一個特殊的「水通道」讓好水能進到細胞內，吸收及廢物排放的功能，而水源隱藏著鈣，鎂，鉀等元素，在天然的地理環境下，能量自然寄存在水的分子，使能量的有機髏高效率吸收，並選擇分配給各器官組織所需，達到吸收高能量的健康目標。
