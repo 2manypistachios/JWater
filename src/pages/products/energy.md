@@ -1,9 +1,10 @@
 ---
 templateKey: product-page
 path: /energy/
-title: Energy
-description: So much energy!!
+title: Charcoal Fitered Water  竹炭水
+description: >-
+  純天然的竹炭泉水來自最環保的竹林，經過特殊竹炭過濾製程，可使水質更純淨甘甜。竹炭具有除氯、過濾的功效，同使能增加水中礦物質的含量與調整酸鹼值，竹炭之所以能具有如此神奇的特性，是因為它內部含有許多細小的孔，每個孔只有2～3微米的大小，而且每一個孔都可與外面的空氣接觸，在泡茶時除了改善水質外，還可去除茶中的草酸，使茶湯喝起來更為清香。
 image: /img/charcoal-water.jpg
 background_image: /img/charcoal-water-square.jpg
 ---
-So much power in just water!!
+純天然的竹炭泉水來自最環保的竹林，經過特殊竹炭過濾製程，可使水質更純淨甘甜。竹炭具有除氯、過濾的功效，同使能增加水中礦物質的含量與調整酸鹼值，竹炭之所以能具有如此神奇的特性，是因為它內部含有許多細小的孔，每個孔只有2～3微米的大小，而且每一個孔都可與外面的空氣接觸，在泡茶時除了改善水質外，還可去除茶中的草酸，使茶湯喝起來更為清香。
