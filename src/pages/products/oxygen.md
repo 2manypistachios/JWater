@@ -1,10 +1,11 @@
 ---
 templateKey: product-page
 path: /oxygen/
-title: Oxygen
-description: AIR AND WATER OH MY GOODNESS
+title: Oxygen Content water  高溶氧水
+description: >-
+  水是氫和氧兩種元素組成的物質，分子式為H2O，由於部分的元素都有一個以上的同位素， 氧元素也有三種同位素如16 O.17 O.18 O.等，那麼
+  H2On並非表示只有一種水，而人體內濃度0.01%以上的元素氧佔65%，當（H2O)n進入體內後即從細胞膜上的「穿膜蛋白水道」一個個循序漸進地進入細胞內，很明顯「好水」對人體多重要，我們的純浄水源配合高溶氧技術把氧的元素溶合一起。
 image: /img/oxygen-water.jpg
-background_image: /img/pic01.f7c500d0.jpg
+background_image: /img/oxygen-water.jpg
 ---
-
-Oxygen water is great!
+水是氫和氧兩種元素組成的物質，分子式為H2O，由於部分的元素都有一個以上的同位素， 氧元素也有三種同位素如16 O.17 O.18 O.等，那麼 H2On並非表示只有一種水，而人體內濃度0.01%以上的元素氧佔65%，當（H2O)n進入體內後即從細胞膜上的「穿膜蛋白水道」一個個循序漸進地進入細胞內，很明顯「好水」對人體多重要，我們的純浄水源配合高溶氧技術把氧的元素溶合一起。
