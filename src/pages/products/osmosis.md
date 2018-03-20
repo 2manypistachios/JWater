@@ -1,9 +1,11 @@
 ---
 templateKey: product-page
 path: /osmosis/
-title: Osmosis
-description: Breath in.... .... .... ....
+title: Reverse Osmosis  逆滲透水
+description: >-
+  淨水之水源取自於中央玉山山脈，純淨天然水體，經過不斷冲刷堆積，形成含水層相當豐富的扇頂，扇中央以砂為主而扇尾就大部份是黏土，Jwater的水源處于在扇中央，地下含水量非常豐富，水質極佳，而地面河水乾淨清澈，因而孕育出清新甘甜浄水，而我們採用「R
+  O」逆滲透的方法過濾原理來純化水質，把水以外的東西分離，使水的純度提高。
 image: /img/osmosis-water.jpg
-background_image: /img/pic02.40a772a0.jpg
+background_image: /img/osmosis-water.jpg
 ---
-Osmosis water is fantastic!!
+淨水之水源取自於中央玉山山脈，純淨天然水體，經過不斷冲刷堆積，形成含水層相當豐富的扇頂，扇中央以砂為主而扇尾就大部份是黏土，Jwater的水源處于在扇中央，地下含水量非常豐富，水質極佳，而地面河水乾淨清澈，因而孕育出清新甘甜浄水，而我們採用「R O」逆滲透的方法過濾原理來純化水質，把水以外的東西分離，使水的純度提高。
