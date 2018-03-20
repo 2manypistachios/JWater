@@ -1,14 +1,32 @@
 ---
 templateKey: about-page
 path: /about/
-title: About JWater's Values
-description: Talking About JWater
-image: /img/enviornment2.jpg
+title: 水自白
+description: 水自白
+image: /img/5a37291f901df.jpg
 ---
-This is my first post on my new fake blog! How exciting!
+「水自白」
 
-I'm sure I'll write a lot more interesting things in the future.
+水曰生命之源：人之所以能在陸地上成長，也是因為身體內，有一整套完善的儲水系統。
 
-Oh, and here's a great quote from this Wikipedia on [salted duck eggs](http://en.wikipedia.org/wiki/Salted_duck_egg).
 
-> A salted duck egg is a Chinese preserved food product made by soaking duck eggs in brine, or packing each egg in damp, salted charcoal. In Asian supermarkets, these eggs are sometimes sold covered in a thick layer of salted charcoal paste. The eggs may also be sold with the salted paste removed, wrapped in plastic, and vacuum packed. From the salt curing process, the salted duck eggs have a briny aroma, a gelatin-like egg white and a firm-textured, round yolk that is bright orange-red in color.
+
+這個系統在人體內儲備了大量的水，約占體重的75％。正因如此，人才能在短時間內，適應暫時的缺水。
+
+
+
+同時，人體內還有一個乾旱管理機制：在人體缺水時，嚴格分配體內儲備的水，並讓最重要的器官先得到足量的水以及由水輸送的養分。
+
+
+
+Jwater的水環保以佛教的「輪回轉世」嘅念推動再生物料為目標，更大的理想是把水瓶變成汗衣捐贈给非洲赤貧國家，在台灣已有民間企業工廠生產如衣服，背包，鞋襪⋯等等的再生產品，香港則未有企業願意投資而未能如願，目前我們積極回收水樽，再捐贈給環保團體作慈善用途。
+
+
+
+
+
+在學校及大型活動的水捐贈中，我們捐水條件是要求他們用後「膠樽回收，樽蓋分離」的環保行為。直此可以培養大家「愛地球，勿亂棄」的意識。
+
+
+
+而我們要求所有接受水捐贈单位保留膠瓶「還原成為再造原料」，更祈望著香港企業家能開拓環保再生物料的工廠給PET膠樽一條生路，更希望與其他環保業界聯繫。
