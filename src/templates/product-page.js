@@ -12,7 +12,7 @@ export const ProductPageTemplate = ({ title, content, image, contentComponent })
         <div id="main" className="alt">
           <section id="one" className="spotlights">
             <section>
-                <img src={image} alt="" />
+                <img src={image} alt="" width={{width:'40%'}}/>
                 <div className="content">
                     <div className="inner">
                         <header className="major">

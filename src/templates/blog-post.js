@@ -7,7 +7,6 @@ class BlogPostTemplate extends React.Component {
   render() {
     const post = this.props.data.markdownRemark;
     const siteTitle = get(this.props, 'data.site.siteMetadata.title');
-    //console.log(post);
     return (
       <div>
         <Helmet title={`${posts.frontmatter.title} | ${siteTitle}`} />
@@ -18,7 +17,6 @@ class BlogPostTemplate extends React.Component {
                   <h1>{post.frontmatter.title}</h1>
                 </header>
                 <span className="image main"><img src={image} alt="" /></span>
-                <div> THIS IS A BLOG POST </div>
                 <div dangerouslySetInnerHTML={{ __html: post.html }} />
                 <hr/>
               </div>
@@ -30,23 +28,3 @@ class BlogPostTemplate extends React.Component {
 }
 
 export default BlogPostTemplate
-
-export const pageQuery = graphql`
-  query BlogPostByPath($path: String!) {
-    site {
-      siteMetadata {
-        title
-        author
-      }
-    }
-    markdownRemark(frontmatter: { path: { eq: $path } }) {
-      id
-      html
-      frontmatter {
-        path
-        title
-        image
-      }
-    }
-  }
-`

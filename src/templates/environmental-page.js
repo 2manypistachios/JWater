@@ -15,7 +15,7 @@ export const EnvironmentalPageTemplate = ({ title, content, image, contentCompon
               <header className="major">
                 <h1>{title}</h1>
               </header>
-              <span className="image main"><img src={image} alt="" /></span>
+              <span className="image main"><img src={image} alt="" style={{'max-height':'300px',overflow:'hidden'}}/></span>
               <PageContent className="content" content={content} />
             </div>
           </section>

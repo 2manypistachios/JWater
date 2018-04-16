@@ -16,7 +16,7 @@ collections:
       - {label: "Path", name: "path", widget: "string"}
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Description", name: "description", widget: "string"}
-      - {label: "Product Image", name: image, widget: "image"}
+      - {label: "Product Image", name: "image", widget: "image"}
       - {label: "Background Image", name: "background_image", widget: "image"}
       - {label: "Body", name: "body", widget: "markdown"}
 
@@ -31,7 +31,7 @@ collections:
           - {label: "Path", name: "path", widget: "hidden", default: "/about"}
           - {label: "Title", name: "title", widget: "string"}
           - {label: "Description", name: "description", widget: "string"}
-          - {label: "Image", name: image, widget: "image"}
+          - {label: "Image", name: "image", widget: "image"}
           - {label: "Body", name: "body", widget: "markdown"}
       - file: "src/pages/environmental/environmental.md"
         label: "Environment"
@@ -39,7 +39,7 @@ collections:
         fields:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "environment-page"}
           - {label: "Path", name: "path", widget: "hidden", default: "/environment"}
-          - {label: Title, name: title, widget: string}
+          - {label: "Title", name: "title", widget: "string"}
           - {label: "Description", name: "description", widget: "string"}
-          - {label: Image, name: image, widget: image}
+          - {label: "Image", name: "image", widget: "image"}
           - {label: "Body", name: "body", widget: "markdown"}
